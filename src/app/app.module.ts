@@ -3,14 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormMultipleComponent } from './form-multiple/form-multiple.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {AngularMaterialModule} from './material/material.module';
+import {ReactiveFormsModule} from '@angular/forms';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormMultipleComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularMaterialModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
